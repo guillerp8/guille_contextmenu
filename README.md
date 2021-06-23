@@ -27,5 +27,7 @@ TriggerEvent("guille_cont:client:open", "Interaction menu" --[[Title of the menu
 You can set custom icons from https://fontawesome.com/v5.15/icons?d=gallery&p=1
 ```
 
-
 [![N|Solid](https://media.discordapp.net/attachments/847529623293788210/856527333165629490/unknown.png)](https://discord.gg/eBpmkW6e5j)
+
+#PREVIEW
+https://streamable.com/57ww5q
