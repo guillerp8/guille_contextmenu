@@ -44,8 +44,7 @@ function drawMenu(v){
                 $("#all").css("top", "30%")
             }
             $("#menu").append(`
-                <span class="title" data-text="
-                ${v.title}">${v.title}</span>
+                <span class="title">${v.title}</span>
             `);
             for (var i = 0; i < v.data.length; i++) {
                 let icono = 'fa-chevron-circle-right';
