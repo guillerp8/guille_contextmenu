@@ -9,7 +9,7 @@ Add in the cfg of your server -> ensure guille_contextmenu
 You can insert the data in many ways, this is an example:
 ```
     local data = {}
-    table.insert(data, {text = "Open", toDo = [[ExecuteCommand("me Hello everyone")]]})
+    table.insert(data, {text = "Open", toDo = [[ExecuteCommand("me Hello everyone")]], icon = "fa-key"})
     table.insert(data, {text = "Close", toDo = [[TriggerEvent("esx_carlock:closecar", nearestcar)]]})
     table.insert(data, {text = "Delete", toDo = [[ExecuteCommand("car zentorno")]]})
     
@@ -24,5 +24,8 @@ If you are not using coords use this:
 ```
 TriggerEvent("guille_cont:client:open", "Interaction menu" --[[Title of the menu]], data --[[Data of the script]], false, --[[Use coords = true, not using coords = false]])
 ```
+You can set custom icons from https://fontawesome.com/v5.15/icons?d=gallery&p=1
+```
+
 
 [![N|Solid](https://media.discordapp.net/attachments/847529623293788210/856527333165629490/unknown.png)](https://discord.gg/eBpmkW6e5j)
