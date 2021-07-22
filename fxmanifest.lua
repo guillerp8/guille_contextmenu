@@ -2,9 +2,9 @@ fx_version 'cerulean'
 
 game 'gta5'
 
-author 'guillerp#1928'
+author 'guillerp#1928 & ZallaxDev'
 
-description 'gloss rolea de culo'
+description 'Menu with animations and icons'
 
 client_scripts {
     'client/client.lu*'
