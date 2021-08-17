@@ -20,9 +20,6 @@
     
 }
 
-
-
-
 .title {
     color: white;
     font-family: 'Quicksand', sans-serif;
@@ -107,6 +104,21 @@
 
 .toAppend {
     margin-top: 56px;
+    width: 250px;
+    height: 500px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.toAppend::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+.toAppend::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 2vh;
+    border: .5px solid rgba(0, 0, 0, .75);
 }
 
 @keyframes cabecera {
