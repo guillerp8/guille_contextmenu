@@ -1,5 +1,6 @@
 let selected = "0"
 let interact = null
+let down = false;
 
 $(function() {
     console.log = function(){}
@@ -29,7 +30,14 @@ $(function() {
         if (v.selected) {
             $("#" + selected).removeClass("selected")
             selected = v.selected
-            $("#" + v.selected).addClass("selected")
+            $("#" + v.selected).addClass("selected");
+            if (v.selected > 13 || down){
+                down = true
+                $('#' + v.selected)[0].scrollIntoView()
+            }
+            if (v.selected == 0){
+                down = false
+            }
         }
 
         if (v.move == "no") {
@@ -88,9 +96,9 @@ function drawMenu(v){
 
             let delay = i/10;  //DELAY DE ANIMACIÓN AL MOSTRAR LISTA 
             $("#menu-container").append(`
-            <div class="te table-code hvr-rectangle-out hvr-icon-forward" id = "${i}" style="animation-delay:${delay}s" text="${v.data[i]['text']}" execute="${v.data[i]['toDo']}"> 
-            ${v.data[i]['text']}<i class="fas ${icono}"></i>
-            </div>
+                <div class="te table-code hvr-rectangle-out hvr-icon-forward" id = "${i}" style="animation-delay:${delay}s" text="${v.data[i]['text']}" execute="${v.data[i]['toDo']}"> 
+                    ${v.data[i]['text']}<i class="fas ${icono}"></i>
+                </div>
             `);
 
 
@@ -101,8 +109,11 @@ function drawMenu(v){
                 $("#all").fadeIn(500)
             }
         }
+        $('#0')[0].scrollIntoView()
 
         $("#0").addClass("selected")
+
+        selected = 0
 
     }
 
