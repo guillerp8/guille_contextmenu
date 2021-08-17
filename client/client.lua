@@ -9,6 +9,7 @@ end
 local GUI = {}
 GUI.Time = 0
 
+local isThis = {}
 
 
 RegisterNetEvent("guille_cont:client:open")
@@ -42,7 +43,7 @@ AddEventHandler("guille_cont:client:open", function(title, data, cb, useCoords, 
             useCoords = useCoords;
         })
     else
-        log("Menu created")
+        log("Menu created", '')
         SendNUIMessage({
             title = title;
             data = data;
@@ -112,4 +113,3 @@ AddEventHandler("openMenu", function(num)
         end
     end)
 end)
-
