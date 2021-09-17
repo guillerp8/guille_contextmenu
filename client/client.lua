@@ -71,7 +71,7 @@ AddEventHandler("openMenu", function(num)
                     move = "no"
                 })
                 isThis['selected'] = 1
-                isThis['data'] = nil
+                isThis['data'] = {}
             end
 
             if IsControlJustPressed(0, 27) and (GetGameTimer() - GUI.Time) > 150 then
