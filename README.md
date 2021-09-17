@@ -17,7 +17,7 @@ RegisterCommand("testmenu", function()
     TriggerEvent("guille_cont:client:open", "Hola", data, false)
 end)
     
-    INSIDE [[]] THE CODE THAT THE BUTTON WIL EXECUTE
+    INSIDE [[]] THE CODE THAT THE BUTTON WILL EXECUTE
     
 ```
 Use this event if you are using coords:
