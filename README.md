@@ -8,10 +8,14 @@ Add in the cfg of your server -> ensure guille_contextmenu
 
 You can insert the data in many ways, this is an example:
 ```
+RegisterCommand("testmenu", function()
     local data = {}
-    table.insert(data, {text = "Open", toDo = [[ExecuteCommand("me Hello everyone")]], icon = "fa-key"})
-    table.insert(data, {text = "Close", toDo = [[TriggerEvent("esx_carlock:closecar", nearestcar)]]})
-    table.insert(data, {text = "Delete", toDo = [[ExecuteCommand("car zentorno")]]})
+    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola")]]})
+    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola1")]]})
+    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola2")]]})
+    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola3")]]})
+    TriggerEvent("guille_cont:client:open", "Hola", data, false)
+end)
     
     INSIDE [[]] THE CODE THAT THE BUTTON WIL EXECUTE
     
