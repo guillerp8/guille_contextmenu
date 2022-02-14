@@ -10,10 +10,10 @@ You can insert the data in many ways, this is an example:
 ```
 RegisterCommand("testmenu", function()
     local data = {}
-    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola")]]})
-    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola1")]]})
-    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola2")]]})
-    table.insert(data, {text = "Juanjo", toDo = [[TriggerServerEvent("hola3")]]})
+    table.insert(data, {text = "Juanjodeb", toDo = [[TriggerServerEvent("hola")]]})
+    table.insert(data, {text = "Juanjodeb", toDo = [[TriggerServerEvent("hola1")]]})
+    table.insert(data, {text = "Juanjodeb", toDo = [[TriggerServerEvent("hola2")]]})
+    table.insert(data, {text = "Juanjodeb", toDo = [[TriggerServerEvent("hola3")]]})
     TriggerEvent("guille_cont:client:open", "Hola", data, false)
 end)
     
